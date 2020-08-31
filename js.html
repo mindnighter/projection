@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class ="container" >
+  <form class ="group" name="f">
+    <p>Градус повороту по X</p>
+    <input type="range" min="0" max="360" step="1" value="0" name="x" onmousemove="start()">
+    <input type="text" name="wx">
+    <p>Градус повороту по Y</p>
+    <input type="range" min="0" max="360" step="1" value="0" name="y" onmousemove="start()">
+    <input type="text" name="wy">
+    <p>Градус повороту по Z</p>
+    <input type="range" min="0" max="360" step="1" value="0" name="z" onmousemove="start()">
+    <input type="text" name="wz">
+  </form>
+<div>
+
+<canvas width="2000" height="2000"></canvas>
+<script src="main.js"></script>
+
+</body>
+
+</html>

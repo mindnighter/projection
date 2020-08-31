@@ -1,0 +1,78 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.content {
+
+}
+body{
+  font-size: 22px;
+  zoom: 0.5;
+}
+p{
+  font-size: 22px;
+}
+
+input {
+  font-size: 32px;
+  margin: 30px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.knopka {
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 200px;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: rgb(212,75,56);
+  padding: .7em 1.5em;
+  outline: none;
+}
+.knopka:hover { background: rgb(232,95,76); }
+.knopka:active { background: rgb(152,15,0); }
+
+.qwe {
+  transform:scale(3);
+  opacity:0.9;
+  cursor:pointer;
+  }
+
+
+  input[type=range] {
+-webkit-appearance: none;
+margin: 50px;
+width: 200%;
+}
+
+input[type=range]:focus {
+outline: none;
+}
+
+/* Полоса в Хроме */
+
+input[type=range]::-webkit-slider-runnable-track {
+height: 8px;
+cursor: pointer;
+animate: 0.2s;
+border: 1px solid #575656;
+background: #AD020D;
+}
+
+/* Бегунок в Хроме */
+
+input[type=range]::-webkit-slider-thumb {
+box-shadow: 1px 1px 1px #000;
+border: 1px solid #000;
+height: 35px;
+width: 15px;
+border-radius: 40%/60%;
+background: #ffffff;
+cursor: pointer;
+-webkit-appearance: none;
+margin-top: -14px;
+}
